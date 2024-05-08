@@ -55,7 +55,8 @@ name: token , value: eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Imp1YW5Acm9kcmlndWV6Lm9yZ3
 
 ### Diagrama de la solución
 
-![DIAGRAMA_v2](https://github.com/jbozada/userRegister/assets/12485654/8b3da46e-484b-41ac-80c7-19caedb916fa)
+![DIAGRAMA_v2](https://github.com/jbozada/userRegister/assets/12485654/d2f468a4-73fc-476d-8183-e9f3fe28b57e)
+
 
 ## Ejecución de proyecto en sistema operativo Linux (Se requiere maven 3.6.3 y java 11 instalados y seteados)
 
@@ -68,15 +69,26 @@ name: token , value: eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Imp1YW5Acm9kcmlndWV6Lm9yZ3
 - Generar jar del proyecto
 
 ```
+$ mvn clean && mvn install -DskipTests"
+```
+
+NOTA: En caso de querer levantar el proyecto con la propiedad con valor de variable de entorno, debemos modificar el application.properties descomentar linea correspondiente y ejecutar el comando de esta forma:
+
+```
 $ mvn clean && mvn install -DskipTests -Duser.nisum.env.password.regex="^(?=.*\d)(?=.*[a-zA-Z]).{7,}$"
 ```
 
 - Levantar el proyecto con Maven, debe estar libre el puerto 8080.
 
 ```
-$ mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Duser.nisum.env.password.regex=^(?=.*\d)(?=.*[a-zA-Z]).{7,}$"
+$ mvn spring-boot:run
 ```
 
+NOTA: En caso de querer levantar el proyecto con la propiedad con valor de variable de entorno, debemos modificar el application.properties descomentar linea correspondiente y ejecutar el comando de esta forma:
+
+```
+$ mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Duser.nisum.env.password.regex=^(?=.*\d)(?=.*[a-zA-Z]).{7,}$"
+```
 
 ## Pruebas del proyecto
 
@@ -87,24 +99,24 @@ Aquí veremos los 2 enpoints generados para esta solución y podemos ejecutarlos
 
 1.- Ingresar al link del swagger:
 
-![1](https://github.com/jbozada/userRegister/assets/12485654/a7c7428b-a478-4380-a847-ba1173cf1d06)
+![1](https://github.com/jbozada/userRegister/assets/12485654/80dd67c9-0d2e-4ab1-829b-b25443727ea1)
 
 2.- Desplegar la pestaña "user-register-controller", allí veremos los 2 endpoints publicados:
 
-![2](https://github.com/jbozada/userRegister/assets/12485654/d5d1c3bc-d7b2-4d7e-bf3f-24457bca63e5)
+![2](https://github.com/jbozada/userRegister/assets/12485654/8da912e8-7e91-40df-82f4-079c24274571)
 
 3.- Por ejemplo, para probar la creación de un nuevo usuario desplegamos la pestaña que dice "POST /userRegister/add Add user" y luego dar click en el botón "Try it out":
 
-![3](https://github.com/jbozada/userRegister/assets/12485654/3061f28c-bbac-4dbd-b55f-7ae215f850ec)
+![3](https://github.com/jbozada/userRegister/assets/12485654/89b67d41-54dd-4e68-965d-f429b97d8234)
 
 4.- Luego podemos modificar el request cargado por defecto o ejecutarlo directamente mediante el botón "Execute", luego de esto nos mostrará la respuesta del servicio:
 
-![4](https://github.com/jbozada/userRegister/assets/12485654/9368ee61-e952-4f0a-b29a-1419557c8a6b)
+![4](https://github.com/jbozada/userRegister/assets/12485654/c9f76754-ed97-4fda-be18-80b3b27b3cef)
 
-![5](https://github.com/jbozada/userRegister/assets/12485654/0e8c8e20-e9a9-482b-ad24-c99629836a66)
+![5](https://github.com/jbozada/userRegister/assets/12485654/25612749-06e4-4c24-a407-b1b3f3cfa593)
 
 5.- Se puede modificar el request del servicio, ejecutar nuevamente y validar todas las restricciones implementadas en este servicio (usuario existente, password incorrecta, correo inválido).
 
-![6](https://github.com/jbozada/userRegister/assets/12485654/25700096-65cd-4dc0-a9a0-e4389eeb4691)
+![6](https://github.com/jbozada/userRegister/assets/12485654/29ee6582-16a4-433e-80af-fb16eddd5efb)
 
 6.- Para probar el servicio de busqueda de usuarios solo debe realizar estos pasos mencionados anteriormente sobre la pestaña que dice "GET /userRegister/getAll Get all the users".
