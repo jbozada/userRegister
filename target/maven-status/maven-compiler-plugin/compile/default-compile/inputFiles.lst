@@ -1,0 +1,14 @@
+/home/jbozada/Repositories/proyectos-java/userRegister/src/main/java/com/nisum/userregister/entities/UserNisum.java
+/home/jbozada/Repositories/proyectos-java/userRegister/src/main/java/com/nisum/userregister/dtos/request/PhoneRequest.java
+/home/jbozada/Repositories/proyectos-java/userRegister/src/main/java/com/nisum/userregister/controllers/ExceptionController.java
+/home/jbozada/Repositories/proyectos-java/userRegister/src/main/java/com/nisum/userregister/services/UserRegisterService.java
+/home/jbozada/Repositories/proyectos-java/userRegister/src/main/java/com/nisum/userregister/utils/JwtUtil.java
+/home/jbozada/Repositories/proyectos-java/userRegister/src/main/java/com/nisum/userregister/dtos/exception/GenericExceptionDto.java
+/home/jbozada/Repositories/proyectos-java/userRegister/src/main/java/com/nisum/userregister/UserRegisterApplication.java
+/home/jbozada/Repositories/proyectos-java/userRegister/src/main/java/com/nisum/userregister/repositories/PhoneRepository.java
+/home/jbozada/Repositories/proyectos-java/userRegister/src/main/java/com/nisum/userregister/controllers/UserRegisterController.java
+/home/jbozada/Repositories/proyectos-java/userRegister/src/main/java/com/nisum/userregister/entities/Phone.java
+/home/jbozada/Repositories/proyectos-java/userRegister/src/main/java/com/nisum/userregister/dtos/request/UserRequest.java
+/home/jbozada/Repositories/proyectos-java/userRegister/src/main/java/com/nisum/userregister/utils/GenericException.java
+/home/jbozada/Repositories/proyectos-java/userRegister/src/main/java/com/nisum/userregister/dtos/response/UserResponse.java
+/home/jbozada/Repositories/proyectos-java/userRegister/src/main/java/com/nisum/userregister/repositories/UserNisumRepository.java
