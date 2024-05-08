@@ -24,7 +24,7 @@ import io.swagger.v3.oas.annotations.parameters.RequestBody;
 public class UserRegisterController {
 
     @Autowired
-    private UserRegisterService userRegisterService;
+    UserRegisterService userRegisterService;
 
     @SuppressWarnings("rawtypes")
     @PostMapping(path = "add")
