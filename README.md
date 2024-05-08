@@ -17,24 +17,7 @@
 
 ### Funcionalidades desarrolladas
 
-1. Creación de nuevo usuario mediante el endpoint POST: http://localhost:8080/userRegister/add
-
-Request body:
-
-```
-{
-  "name": "Juan Rodriguezz",
-  "email": "juan@rodriguez.org",
-  "password": "hunter2",
-  "phones": [
-    {
-      "number": "1234567",
-      "citycode": "1",
-      "countrycode": "57"
-    }
-  ]
-}
-```
+1. Creación de nuevo usuario.
 
 | Consideraciones aplicadas en este proceso |
 |--- |
@@ -44,13 +27,7 @@ Request body:
 | Generación de token con JWT (JSON Web Token) |
 | Pruebas unitarias con junit |
 
-2. Listar usuarios existentes en la base de datos mediante el endpoint GET: http://localhost:8080/userRegister/getAll
-
-Request param:
-
-```
-name: token , value: eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Imp1YW5Acm9kcmlndWV6Lm9yZ3MiLCJpYXQiOjE3MTUxMTc3NjcsImV4cCI6MTcxNTExNzgyN30.S2ZaGoxR-G5caODXeVt1x7U_0uTWBUsHXlHdX__zcwo
-```
+2. Listar usuarios existentes en la base de datos.
 
 
 ### Diagrama de la solución
