@@ -69,7 +69,7 @@ name: token , value: eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Imp1YW5Acm9kcmlndWV6Lm9yZ3
 - Generar jar del proyecto
 
 ```
-$ mvn clean && mvn install -DskipTests"
+$ mvn clean && mvn install -DskipTests
 ```
 
 NOTA: En caso de querer levantar el proyecto con la propiedad con valor de variable de entorno, debemos modificar el application.properties descomentar linea correspondiente y ejecutar el comando de esta forma:
