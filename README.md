@@ -21,18 +21,18 @@
 
 | Consideraciones aplicadas en este proceso |
 |--- |
-| Validación de correo existente, se lanza excepción en caso de encontrarse registrado previamente.|
+| Validación de correo existente, se lanza excepción en caso de encontrarse registrado previamente. |
 | Validación de correo con formato correcto mediante el uso de una expresión regular, esta expresión regular es configurable mediante el archivo application.properties con nombre: user.nisum.email.regex . |
 | Validación de password con formato correcto mediante el uso de una expresión regular, esta expresión regular es configurable mediante el archivo application.properties con nombre: user.nisum.password.regex , el valor lo obtiene de una variable de entorno (user.nisum.env.password.regex) especificada en el despliegue del proyecto. |
-| Generación de token con JWT (JSON Web Token) |
-| Pruebas unitarias con junit |
+| Generación de token con JWT (JSON Web Token). |
+| Pruebas unitarias con junit. |
 
 2. Listar usuarios existentes en la base de datos.
 
 | Consideraciones aplicadas en este proceso |
 |--- |
-| Se utiliza el token JWT generado en la creación de usuario.|
-| El token debe ser válido y no estar expirado, el token tiene una duración de un minuto |
+| Se utiliza el token JWT generado en la creación de usuario. |
+| El token debe ser válido y no estar expirado, el token tiene una duración de un minuto. |
 
 ### Diagrama de la solución
 
