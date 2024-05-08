@@ -29,6 +29,10 @@
 
 2. Listar usuarios existentes en la base de datos.
 
+| Consideraciones aplicadas en este proceso |
+|--- |
+| Se utiliza el token JWT generado en la creación de usuario.|
+| El token debe ser válido y no estar expirado, el token tiene una duración de un minuto |
 
 ### Diagrama de la solución
 
