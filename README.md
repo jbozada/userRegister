@@ -41,7 +41,7 @@
 
 ## Ejecución de proyecto en sistema operativo Linux (Se requiere maven 3.6.3 y java 11 instalados y seteados)
 
-- clonar el proyecto en el directorio local que deseen: ```$ git clone https://github.com/jbozada/userRegister.git ```
+- clonar el proyecto en el directorio local que deseen: ```git clone https://github.com/jbozada/userRegister.git ```
 
 - Ingresar al directorio del proyecto clonado.
 
