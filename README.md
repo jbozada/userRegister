@@ -45,30 +45,30 @@
 
 - Ingresar al directorio del proyecto clonado.
 
-  ```$ cd  userRegister/ ```
+  ```cd  userRegister/ ```
 
 - Generar jar del proyecto
 
 ```
-$ mvn clean && mvn install -DskipTests
+mvn clean && mvn install -DskipTests
 ```
 
 NOTA: En caso de querer levantar el proyecto con la propiedad con valor de variable de entorno, debemos modificar el application.properties descomentar linea correspondiente y ejecutar el comando de esta forma:
 
 ```
-$ mvn clean && mvn install -DskipTests -Duser.nisum.env.password.regex="^(?=.*\d)(?=.*[a-zA-Z]).{7,}$"
+mvn clean && mvn install -DskipTests -Duser.nisum.env.password.regex="^(?=.*\d)(?=.*[a-zA-Z]).{7,}$"
 ```
 
 - Levantar el proyecto con Maven, debe estar libre el puerto 8080.
 
 ```
-$ mvn spring-boot:run
+mvn spring-boot:run
 ```
 
 NOTA: En caso de querer levantar el proyecto con la propiedad con valor de variable de entorno, debemos modificar el application.properties descomentar linea correspondiente y ejecutar el comando de esta forma:
 
 ```
-$ mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Duser.nisum.env.password.regex=^(?=.*\d)(?=.*[a-zA-Z]).{7,}$"
+mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Duser.nisum.env.password.regex=^(?=.*\d)(?=.*[a-zA-Z]).{7,}$"
 ```
 
 ## Pruebas del proyecto
